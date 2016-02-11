@@ -11,16 +11,15 @@ package dip.lab3.student.solution1;
  */
 public class Startup {
     public static void main(String[] args) {
-//        Input input = new GuiInput();
-//
-//        String result = input.getInput();
-//         
-//        
-//        Output output = new GuiOutput();
-//        output.getOutput(result);
+        Input input = new GuiInput();
+
+        String result = input.getInput();
+         
         
-           Input input = new FileInput();
-           String
+        Output output = new GuiOutput();
+        output.getOutput(result);
+        
+           
     }
     
 }
