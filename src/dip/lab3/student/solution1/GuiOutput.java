@@ -5,17 +5,17 @@
  */
 package dip.lab3.student.solution1;
 
-import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author Dell
  */
-public class GuiOutput implements Output {
+public class GuiOutput implements MessageOutput {
 
     @Override
-    public void getOutput(String line) {
+    public void getMessageOutput(String line) {
         JOptionPane.showMessageDialog(null, line);
     }
 

@@ -9,11 +9,12 @@ package dip.lab3.student.solution1;
  *
  * @author Dell
  */
-public class ConsoleOutput implements Output {
+public class ConsoleOutput implements MessageOutput {
 
     @Override
-    public void getOutput(String line) {
-        System.out.println("Hello");
+    public void getMessageOutput(String line) {
+        System.out.print("Your entered:");
+        System.out.println(line);
         
     }
     

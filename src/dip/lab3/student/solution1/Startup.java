@@ -11,14 +11,19 @@ package dip.lab3.student.solution1;
  */
 public class Startup {
     public static void main(String[] args) {
-        Input input = new GuiInput();
+//        MessageInput input = new GuiInput();
+//
+//        String result = input.getMessageInput();
+//         
+//        
+//        MessageOutput output = new GuiOutput();
+//        output.getMessageOutput(result);
 
-        String result = input.getInput();
-         
+        MessageInput input = new ConsoleInput();
+        MessageOutput output = new ConsoleOutput();
         
-        Output output = new GuiOutput();
-        output.getOutput(result);
-        
+        MessageService message = new MessageService(input,output);
+        message.getMessage();
            
     }
     

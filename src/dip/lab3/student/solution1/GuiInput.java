@@ -11,10 +11,10 @@ import javax.swing.JOptionPane;
  *
  * @author Dell
  */
-public class GuiInput implements Input {
+public class GuiInput implements MessageInput {
 
     @Override
-    public String getInput() {
+    public String getMessageInput() {
        String result = JOptionPane.showInputDialog("Hello");
        return result;
         

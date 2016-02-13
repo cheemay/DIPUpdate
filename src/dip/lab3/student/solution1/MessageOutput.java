@@ -9,7 +9,7 @@ package dip.lab3.student.solution1;
  *
  * @author Dell
  */
-public interface Input {
-    public abstract String getInput();
+public interface MessageOutput {
+    public abstract void getMessageOutput(String line );
     
 }
