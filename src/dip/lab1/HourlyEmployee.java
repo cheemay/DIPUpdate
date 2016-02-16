@@ -6,7 +6,7 @@ package dip.lab1;
  *
  * @author your name goes here
  */
-public class HourlyEmployee extends Employee {
+public class HourlyEmployee implements Employee {
     
     private double hourlyRate;
     private double totalHrsForYear;
@@ -42,5 +42,10 @@ public class HourlyEmployee extends Employee {
         setHourlyRate(hourlyRate);
         setTotalHrsForYear(totalHrsForYear);
     }
+
+    @Override
+    public double getAnnualWages() {
+        return hourlyRate * totalHrsForYear;
+          }
 
 }

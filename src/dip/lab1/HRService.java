@@ -14,6 +14,10 @@ public class HRService {
      * various employee types. Is this the best way to go? Do we have
      * type safety?
      */
+    private Employee employee;
+    public HRService(Employee e){
+        employee = e;
+    }
     //this is a super class not used all methods.
 //    public static final String SALARIED_TYPE = "Salaried";
 //    public static final String HOURLY_TYPE = "Hourly";
@@ -69,7 +73,7 @@ public class HRService {
      */
     // if we not want to call through property then we cna call the interface class through argument.
     public double getAnnualCompensationForEmployee(Employee e) {
-       return e.getAnnualWages();
+       return employee.getAnnualWages();
 
         // One example of using fragile if logic to determine employee type.
         // If only we could use polymorphism!
